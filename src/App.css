@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.SliderContainer {
+  max-height: "200px";
+  overflow-y: hidden;
+  background: "black";
+  margin: 10px auto;
+}
+
+.SliderContainer:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.paymentCard {
+  background: "red";
+  border-radius: "10px";
+}
