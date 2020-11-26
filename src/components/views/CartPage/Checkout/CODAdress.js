@@ -54,7 +54,7 @@ export default function CODAdressForm() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Shipping address
+        عنوان التسليم
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>
@@ -62,7 +62,7 @@ export default function CODAdressForm() {
             required
             id="firstName"
             name="firstName"
-            label="First name"
+            label="الاسم"
             fullWidth
             autoComplete="given-name"
             value={infos.name}
@@ -74,7 +74,7 @@ export default function CODAdressForm() {
             required
             id="lastName"
             name="lastName"
-            label="Last name"
+            label="النسب"
             fullWidth
             autoComplete="family-name"
             value={infos.lastName}
@@ -86,7 +86,7 @@ export default function CODAdressForm() {
             required
             id="address1"
             name="address1"
-            label="Address"
+            label="العنوان"
             fullWidth
             autoComplete="shipping address-line1"
             value={infos.adress1}
@@ -97,7 +97,7 @@ export default function CODAdressForm() {
           <TextField
             id="address2"
             name="address2"
-            label="Phone"
+            label="رقم الهاتف"
             fullWidth
             required
             autoComplete="shipping address-line2"
@@ -110,7 +110,7 @@ export default function CODAdressForm() {
             required
             id="city"
             name="city"
-            label="City"
+            label="المدينة"
             fullWidth
             autoComplete="shipping address-level2"
             value={infos.city}
@@ -121,7 +121,7 @@ export default function CODAdressForm() {
           <TextField
             id="state"
             name="state"
-            label="State/Province/Region"
+            label="الاقليم/الجهة"
             fullWidth
             value={infos.state}
             onChange={handleInputChange}
@@ -132,7 +132,7 @@ export default function CODAdressForm() {
             required
             id="zip"
             name="zip"
-            label="Zip / Postal code"
+            label="code postal"
             fullWidth
             autoComplete="shipping postal-code"
             value={infos.zip}

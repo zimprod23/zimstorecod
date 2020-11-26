@@ -68,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const steps = ["Shipping address", "Payment details"];
+const steps = ["عنوان الشحن", "بيانات الدفع"];
 //const steps = ["Shipping address", "Payment details", "Review your order"];
 
 export default function CODChecout(props) {
@@ -157,7 +157,7 @@ export default function CODChecout(props) {
       <main className={classes.layout}>
         <Paper className={classes.paper}>
           <Typography component="h1" variant="h4" align="center">
-            Checkout
+            الدفع
           </Typography>
           <Stepper activeStep={activeStep} className={classes.stepper}>
             {steps.map((label) => (

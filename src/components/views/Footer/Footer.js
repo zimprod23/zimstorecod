@@ -83,6 +83,7 @@ function Footer(props) {
               <a
                 color="inherit"
                 href="https://www.facebook.com/Zim-102514491708545"
+                target="_blank"
               >
                 Facebook
               </a>
@@ -93,7 +94,11 @@ function Footer(props) {
               color="textSecondary"
               component="p"
             >
-              <a color="inherit" href="https://www.instagram.com/zim2023/">
+              <a
+                color="inherit"
+                href="https://www.instagram.com/Zim1official/"
+                target="_blank"
+              >
                 Instagram
               </a>
             </Typography>
@@ -103,7 +108,11 @@ function Footer(props) {
               color="textSecondary"
               component="p"
             >
-              <a color="inherit" href="https://twitter.com/zim22296305">
+              <a
+                color="inherit"
+                href="https://twitter.com/zim22296305"
+                target="_blank"
+              >
                 Twitter
               </a>
             </Typography>
@@ -123,7 +132,7 @@ function Footer(props) {
               color="textSecondary"
               component="p"
             >
-              zimstore2023@gmail.com
+              zims2023@gmail.com
             </Typography>
             <Typography
               variant="subtitle1"
@@ -131,7 +140,7 @@ function Footer(props) {
               color="textSecondary"
               component="p"
             >
-              zouhamza0@gmail.com
+              zowlucas0@gmail.com
             </Typography>
             <Typography
               variant="subtitle1"

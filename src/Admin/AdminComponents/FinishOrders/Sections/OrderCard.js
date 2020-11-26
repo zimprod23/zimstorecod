@@ -68,17 +68,17 @@ function ProductCards(props) {
                 component="p"
                 className={classes.desc}
               >
-                hfja fvishod vsdihov dsniovcds vdsnio
+                .
               </Typography>
             </CardContent>
           </CardActionArea>
         </a>
         <CardActions>
           <Button size="small" color="primary">
-            {`${props.product.price} $`}
+            {`${props.product.price} MAD`}
           </Button>
           <Button size="small" color="primary">
-            {`${props.product.originalPrice} $`}
+            {`${props.product.originalPrice} MAD`}
           </Button>
         </CardActions>
       </Card>

@@ -45,7 +45,7 @@ export default function Review(props) {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Order summary
+        مراجعة الطلب
       </Typography>
       <List disablePadding>
         {props.products &&
