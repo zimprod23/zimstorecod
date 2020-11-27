@@ -144,6 +144,7 @@ function CartePage(props) {
               onClick={handleOpenDialog1}
               style={{ padding: "10px" }}
               startIcon={<Payment />}
+              disabled
             >
               PayPal
             </Button>
