@@ -156,13 +156,13 @@ export default function NestedList() {
           selected={selectedIndex === 4}
           onClick={(event) => {
             handleListItemClick(event, 4);
-            setcat("Apple");
+            setcat("Beauty");
           }}
         >
           <ListItemIcon>
-            <Apple />
+            <Stars />
           </ListItemIcon>
-          <ListItemText primary="منتجات آبل" />
+          <ListItemText primary="الجمال" />
         </ListItem>
         <ListItem
           button
@@ -175,7 +175,7 @@ export default function NestedList() {
           <ListItemIcon>
             <Watch />
           </ListItemIcon>
-          <ListItemText primary="ساعات" />
+          <ListItemText primary="ساعات يدوية" />
         </ListItem>
         <ListItem
           button

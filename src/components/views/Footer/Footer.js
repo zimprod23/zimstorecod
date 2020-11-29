@@ -132,7 +132,7 @@ function Footer(props) {
               color="textSecondary"
               component="p"
             >
-              zims2023@gmail.com
+              officialzim4@gmail.com
             </Typography>
             <Typography
               variant="subtitle1"
@@ -140,7 +140,7 @@ function Footer(props) {
               color="textSecondary"
               component="p"
             >
-              zowlucas0@gmail.com
+              zimstore23@gmail.com
             </Typography>
             <Typography
               variant="subtitle1"

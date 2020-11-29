@@ -27,6 +27,10 @@ const useStyles = makeStyles((theme) => ({
   desc: {
     wordWrap: "break-word",
   },
+  oldPrice: {
+    color: "red",
+    textDecoration: "line-through",
+  },
 }));
 
 function ProductCards(props) {
@@ -71,12 +75,21 @@ function ProductCards(props) {
                   />
                 </>
               ) : null}
+              <br />
+              <Typography
+                variant="body2"
+                color="textSecondary"
+                component="p"
+                className={classes.oldPrice}
+              >
+                {`${props.product.strictPrice} DH`}
+              </Typography>
             </CardContent>
           </CardActionArea>
         </a>
         <CardActions>
           <Button size="small" color="primary">
-            {`${props.product.price} MAD`}
+            {`${props.product.price} DH`}
           </Button>
           <Button size="small" color="primary" className={classes.reduction}>
             {`-${props.product.reduction}%`}

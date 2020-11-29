@@ -4,7 +4,7 @@ export const categories = [
     index: 1,
   },
   {
-    name: "Phones",
+    name: "Beauty",
     index: 2,
   },
   {
@@ -138,5 +138,25 @@ export const keywords = [
   {
     key: "Fashion",
     index: 26,
+  },
+  {
+    key: "Skin",
+    index: 27,
+  },
+  {
+    key: "Skin care",
+    index: 28,
+  },
+  {
+    key: "Women care",
+    index: 29,
+  },
+  {
+    key: "Skin health",
+    index: 30,
+  },
+  {
+    key: "Beautiful skin",
+    index: 31,
   },
 ];

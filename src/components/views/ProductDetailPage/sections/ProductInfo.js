@@ -39,6 +39,10 @@ const useStyles = makeStyles((theme) => ({
   chip: {
     margin: theme.spacing(1),
   },
+  oldPrice: {
+    color: "red",
+    textDecoration: "line-through",
+  },
 }));
 function ProductInfo(props) {
   const dispatch = useDispatch();
@@ -72,7 +76,8 @@ function ProductInfo(props) {
     dimentions,
     brand,
     id,
-    raters
+    raters,
+    strictPrice
   ) {
     return {
       name,
@@ -85,6 +90,7 @@ function ProductInfo(props) {
       brand,
       id,
       raters,
+      strictPrice,
     };
   }
   const rows =
@@ -100,7 +106,8 @@ function ProductInfo(props) {
       props.Product.product.dimentions,
       props.Product.product.brand,
       props.Product.product._id,
-      props.Product.product.raters
+      props.Product.product.raters,
+      props.Product.product.strictPrice
     );
   const onFavClick = () => {
     dispatch(hitLoveProduct(rows.id, !isSaved));
@@ -208,7 +215,15 @@ function ProductInfo(props) {
 
         <Grid item>
           <Typography variant="h5" gutterBottom>
-            {`${rows.price} MAD`}
+            {`${rows.price} DH`}
+          </Typography>
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            component="p"
+            className={classes.oldPrice}
+          >
+            {`${rows.strictPrice} DH`}
           </Typography>
         </Grid>
         <Divider variant="middle" />
