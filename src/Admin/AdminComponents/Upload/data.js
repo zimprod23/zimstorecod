@@ -31,6 +31,10 @@ export const categories = [
     name: "Clothing",
     index: 8,
   },
+  {
+    name: "Sport",
+    index: 9,
+  },
 ];
 
 export const keywords = [

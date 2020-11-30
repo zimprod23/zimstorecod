@@ -19,6 +19,7 @@ import {
   Book,
   GroupWork,
   LocalOffer,
+  FitnessCenter,
 } from "@material-ui/icons";
 import { productBycat, getAllProducts } from "../../actions/productsAction";
 // import Collapse from "@material-ui/core/Collapse";
@@ -130,13 +131,13 @@ export default function NestedList() {
           selected={selectedIndex === 2}
           onClick={(event) => {
             handleListItemClick(event, 2);
-            setcat("Computers");
+            setcat("Sport");
           }}
         >
           <ListItemIcon>
-            <Computer />
+            <FitnessCenter />
           </ListItemIcon>
-          <ListItemText primary="أجهزة الكمبيوتر وأجهزة الكمبيوتر المحمولة" />
+          <ListItemText primary="أدوات رياضية " />
         </ListItem>
         <ListItem
           button
