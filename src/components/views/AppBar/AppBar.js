@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { fade, makeStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
+import { AppBar, Fab, withStyles } from "@material-ui/core";
+import { green, purple } from "@material-ui/core/colors";
 import Toolbar from "@material-ui/core/Toolbar";
 import Slide from "@material-ui/core/Slide";
 import IconButton from "@material-ui/core/IconButton";
@@ -12,7 +13,13 @@ import PropTypes from "prop-types";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
-import { ExitToApp, ShoppingCart, VpnKey, LockOpen } from "@material-ui/icons";
+import {
+  ExitToApp,
+  ShoppingCart,
+  VpnKey,
+  LockOpen,
+  WhatsApp,
+} from "@material-ui/icons";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import Logo from "./zim2.PNG";
 import Axios from "axios";
@@ -114,7 +121,23 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "3.5em",
     borderRadius: "10px",
   },
+  fab: {
+    position: "fixed",
+    bottom: "40px",
+    float: "right",
+    right: "40px",
+  },
 }));
+
+const ColorFab = withStyles((theme) => ({
+  root: {
+    color: theme.palette.getContrastText(green[500]),
+    backgroundColor: green[500],
+    "&:hover": {
+      backgroundColor: green[700],
+    },
+  },
+}))(Fab);
 
 export default function PrimarySearchAppBar(props) {
   const classes = useStyles();
@@ -391,6 +414,15 @@ export default function PrimarySearchAppBar(props) {
               </IconButton>
             </div>
           </Toolbar>
+          {/* This part machkoka */}
+          <ColorFab
+            //color="primary"
+            aria-label="scroll back to top"
+            className={classes.fab}
+            onClick={() => window.location.replace("https://wa.link/dei7ts")}
+          >
+            <WhatsApp style={{ color: "#FFFFFF" }} />
+          </ColorFab>
         </AppBar>
       </HideOnScroll>
       {renderMobileMenu}
