@@ -123,9 +123,9 @@ const useStyles = makeStyles((theme) => ({
   },
   fab: {
     position: "fixed",
-    bottom: "40px",
+    bottom: "25px",
     float: "right",
-    right: "40px",
+    right: "25px",
   },
 }));
 
