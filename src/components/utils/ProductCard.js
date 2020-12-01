@@ -15,7 +15,9 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 345,
   },
   media: {
-    height: 140,
+    //height: 140,
+    height: 200,
+    width: "100%",
   },
   reduction: {
     fontSize: 18,
